@@ -1,0 +1,30 @@
+/* CSS reset */
+body {
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+/* Typography */
+html {
+    /* Seems like everyone's doing this these days */
+    font-family:
+            -apple-system,
+            system-ui,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            "Helvetica Neue",
+            Arial,
+            sans-serif;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+p {
+    margin-top: 1em;
+    line-height: 1.5;
+}

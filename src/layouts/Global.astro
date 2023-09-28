@@ -1,0 +1,32 @@
+---
+interface Props {
+    readonly title?: string;
+}
+const { title } = Astro.props;
+import './Global.css';
+
+import Nav from '../components/Nav.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {title
+        ?
+            <title>
+                Neil&rsquo;s Hindi Files
+                &mdash;
+                {title}
+            </title>
+        :
+            <title>
+                Neil&rsquo;s Hindi Files
+            </title>
+    }
+</head>
+<body>
+<Nav title={title} />
+<slot />
+</body>
+</html>

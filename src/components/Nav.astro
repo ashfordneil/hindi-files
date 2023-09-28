@@ -1,0 +1,30 @@
+---
+interface Props {
+    readonly title?: string;
+}
+const { title } = Astro.props;
+---
+<style>
+    nav {
+        background-color: lightblue;
+        padding: 0.5rem 1ch;
+    }
+    h2 {
+        margin: 0;
+    }
+</style>
+
+<nav>
+    {title
+        ?
+            <h2>
+                Neil&rsquo;s Hindi Files
+                &mdash;
+                {title}
+            </h2>
+        :
+            <h2>
+                Neil&rsquo;s Hindi Files
+            </h2>
+    }
+</nav>

@@ -1,0 +1,20 @@
+---
+interface Props {
+    readonly title?: string;
+}
+const { title } = Astro.props;
+
+import Global from './Global.astro';
+---
+<Global title={title}>
+    <main>
+    <slot />
+    </main>
+</Global>
+
+<style>
+    main {
+        max-width: 80ch;
+        margin: 0 auto;
+    }
+</style>
