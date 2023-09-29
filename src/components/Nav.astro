@@ -4,11 +4,10 @@ interface Props {
 }
 const { title } = Astro.props;
 
-import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg';
+import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg?raw';
 ---
 <style>
     nav {
-        background-color: lightblue;
         padding: 0.5rem 1ch;
 
         display: flex;
@@ -33,13 +32,15 @@ import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg';
         }
     }
 
-    img {
+    i {
+        fill: currentColor;
         width: 1rem;
         vertical-align: middle;
+        display: inline-block;
     }
 </style>
 
-<nav>
+<nav class="filled">
     {title
         ?
             <h2>
@@ -53,6 +54,8 @@ import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg';
     }
     <a href="https://github.com/ashfordneil/hindi-files">
         Fork me on
-        <img src={githubLogo.src} alt="Github"/>
+        <i>
+        <Fragment set:html={githubLogo} />
+        </i>
     </a>
 </nav>

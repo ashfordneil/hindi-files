@@ -5,7 +5,7 @@ interface Props {
 const { letter } = Astro.props;
 ---
 
-<div>
+<div class="outlined">
     <dt lang="hi">{letter}</dt>
     <dd><slot /></dd>
 </div>
@@ -15,7 +15,6 @@ const { letter } = Astro.props;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        border: 1px solid black;
         border-radius: 0.5ch;
         padding: 0.5rem 1ch;
     }

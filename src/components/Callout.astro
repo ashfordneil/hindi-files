@@ -4,7 +4,7 @@ interface Props {
 }
 const { title } = Astro.props;
 ---
-<div>
+<div class="filled">
     <strong>{title}</strong>
     <p>
         <slot />
@@ -13,7 +13,6 @@ const { title } = Astro.props;
 
 <style>
     div {
-        background-color: lightblue;
         padding: 0.5rem 1ch;
         margin-top: 1rem;
         border-radius: 0.5ch;

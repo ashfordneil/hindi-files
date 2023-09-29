@@ -1,0 +1,40 @@
+@use "@catppuccin/palette/scss/catppuccin" as catppuccin;
+
+$latte: map-get(catppuccin.$palette, 'latte');
+$mocha: map-get(catppuccin.$palette, 'mocha');
+
+html {
+  background-color: map-get($mocha, 'base');
+  color: map-get($mocha, 'text');
+}
+
+a {
+  color: map-get($mocha, 'blue');
+}
+
+.filled {
+  background-color: map-get($mocha, 'crust');
+}
+
+.outlined {
+  border: 1px solid map-get($mocha, 'lavendar');
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: map-get($latte, 'base');
+    color: map-get($latte, 'text');
+  }
+
+  a {
+    color: map-get($latte, 'blue');
+  }
+
+  .filled {
+    background-color: map-get($latte, 'crust');
+  }
+
+  .outlined {
+    border-color: map-get($latte, 'lavendar');
+  }
+}
