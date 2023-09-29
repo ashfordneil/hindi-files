@@ -1,0 +1,31 @@
+---
+interface Props {
+    readonly letter: string;
+}
+const { letter } = Astro.props;
+---
+
+<div>
+    <dt lang="hi">{letter}</dt>
+    <dd><slot /></dd>
+</div>
+
+<style>
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        border: 1px solid black;
+        border-radius: 0.5ch;
+        padding: 0.5rem 1ch;
+    }
+
+    dt {
+        justify-self: center;
+        font-size: 1.5em;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+</style>

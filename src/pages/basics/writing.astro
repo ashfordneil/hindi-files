@@ -1,0 +1,219 @@
+---
+import SinglePage from '../../layouts/SinglePage.astro';
+
+import LetterTable from '../../components/LetterTable.astro';
+import LetterTableContainer from '../../components/LetterTableContainer.astro';
+---
+<SinglePage title="The writing system">
+    <h1>The Writing System</h1>
+    <p>
+        Hindi is typically written in the Devanagari Script, which is a
+        left-to-right writing system that makes heavy use of ligatures. Compared
+        to the latin alphabet we use in English, the Devanagari Script is
+        actually a lot more descriptive, phonetic, and structured.
+    </p>
+    <h2>The Letters</h2>
+    <p>
+        Here are the consonants. Well&hellip; some of the consonants. I&rsquo;ve
+        pulled these ones out separately because they have a neat property:
+        each consonant in this list has a buddy. For any "core sound" that
+        you&rsquo;d want a consonant for, Devanagari has one consonant for just
+        that sound, and one for a "breathy" version of that sound. For the
+        phonics nerds out there, these are the "occlusive" consonants according
+        to Wikipedia.
+    </p>
+    <LetterTableContainer>
+        <LetterTable letter="क">Makes a "k" sound, like in "car".</LetterTable>
+        <LetterTable letter="ख">
+            Makes a "kh" sound, like the start of "khaki". This is a breathy
+            <span lang="hi">क</span>.
+        </LetterTable>
+        <LetterTable letter="ग">
+            Makes a "g" sound, like in "garlic".
+        </LetterTable>
+        <LetterTable letter="घ">
+            Makes a "gh" sound, like in "ghastly". This is a breathy
+            <span lang="hi">ग</span>.
+        </LetterTable>
+        <LetterTable letter="च">
+            Makes a "ch" sound, like in "touch".
+        </LetterTable>
+        <LetterTable letter="छ">
+            Makes a breathy "ch" sound. There aren&rsquo;t any clear examples of
+            this in English that I can think of.
+        </LetterTable>
+        <LetterTable letter="ज">
+            Makes a "j" sound, like in "jar".
+        </LetterTable>
+        <LetterTable letter="झ">
+            Makes a "jh" sound. This is a breathy <span lang="hi">ज</span>.
+        </LetterTable>
+        <LetterTable letter="ट">
+            Makes a "t" sound. Specifically the sort of "t" sound you&rsquo;d
+            make with your tongue curled up and touching the top of your mouth.
+        </LetterTable>
+        <LetterTable letter="ठ">
+            Makes a breathy "t" sound. Specifically this is a breathy
+            <span lang="hi">ट</span>.
+        </LetterTable>
+        <LetterTable letter="ड">
+            Makes a "d" sound. Specifically the sort of "d" sound you&rsquo;d
+            make with your tongue curled up and touching the top of your mouth.
+        </LetterTable>
+        <LetterTable letter="ढ">
+            Makes a breathy "d" sound. Specifically this is a breathy
+            <span lang="hi">ड</span>.
+        </LetterTable>
+        <LetterTable letter="त">
+            Makes a "t" sound. Specifically the sort of "t" sound you&rsquo;d
+            make with your tongue right up behind your teeth.
+        </LetterTable>
+        <LetterTable letter="थ">
+            Makes a breathy "t" sound. Specifically this is a breathy
+            <span lang="hi">त</span>.
+        </LetterTable>
+        <LetterTable letter="द">
+            Makes a "d" sound. Specifically the sort of "d" sound you&rsquo;d
+            make with your tongue right up behind your teeth.
+        </LetterTable>
+        <LetterTable letter="ध">
+            Makes a breathy "d" sound. Specifically this is a breathy
+            <span lang="hi">द</span>.
+        </LetterTable>
+        <LetterTable letter="प">Makes a "p" sound.</LetterTable>
+        <LetterTable letter="फ">Makes a breathy "p" sound.</LetterTable>
+        <LetterTable letter="ब">Makes a "b" sound.</LetterTable>
+        <LetterTable letter="भ">Makes a breathy "b" sound.</LetterTable>
+    </LetterTableContainer>
+    <p>
+        Here are some more consonants. This is most of the rest of the
+        consonants. At this point we have stopped grouping things by what sort
+        of sound they make, and have started grouping things by whether I
+        understand them. These are the remaining consonants that I actually know.
+    </p>
+    <LetterTableContainer>
+        <LetterTable letter="ह">Makes a "h" sound. Like in "hi".</LetterTable>
+        <LetterTable letter="य">Makes a "y" sound. Like in "yes".</LetterTable>
+        <LetterTable letter="श">Makes a "sh" sound.</LetterTable>
+        <LetterTable letter="र">
+            Makes a "r" sound. Ideally this should probably be a rolled "r", but
+            it's not a sustained rolled "r" so as long as you make the sound by
+            curling your tongue back rather than with your jaw it should be
+            fine.
+        </LetterTable>
+        <LetterTable letter="ल">Makes a "l" sound. Like in "like".</LetterTable>
+        <LetterTable letter="स">
+            Makes a "s" sound. Like in "sound".
+        </LetterTable>
+        <LetterTable letter="न">
+            Makes an "n" sound. There are a few other "n" sounding consonants
+            below, and I do not know the difference. However, this is the most
+            common "n" sound that I have come across.
+        </LetterTable>
+        <LetterTable letter="व">
+            Makes a "v" or "w" sound. Much like how english doesn&rsquo;t
+            distinguish between <span lang="hi">ट</span> or
+            <span lang="hi">त</span>, Hindi doesn&rsquo;t distinguish between
+            "v" or "w". You can say either and it&rsquo;ll be fine, and you
+            need to treat them as the same when you are listening.
+        </LetterTable>
+        <LetterTable letter="म">Makes an "m" sound.</LetterTable>
+    </LetterTableContainer>
+    <p>
+        Alright and here are the rest. Hopefully one day I&rsquo;ll be able to
+        move these consonants into the sections above.
+    </p>
+    <LetterTableContainer>
+        <LetterTable letter="ङ">Some sort of "n".</LetterTable>
+        <LetterTable letter="ञ">Another sort of "n".</LetterTable>
+        <LetterTable letter="ण">Yet another "n".</LetterTable>
+        <LetterTable letter="ष">
+            Another variant of the "sh" sound. Not sure what makes this
+            different to <span lang="hi">श</span>.
+        </LetterTable>
+    </LetterTableContainer>
+    <p>
+        And next up, here are some vowels. These also come mostly in pairs, with
+        each having a shorter and longer form.
+    </p>
+    <LetterTableContainer>
+        <LetterTable letter="अ">
+            Technically "a", but think "u" in "up".
+        </LetterTable>
+        <LetterTable letter="आ">
+            An "ahh" sound (not screaming, though).
+        </LetterTable>
+        <LetterTable letter="इ">
+            An "i" sound, like in "image".
+        </LetterTable>
+        <LetterTable letter="ई">An "ee" sound.</LetterTable>
+        <LetterTable letter="उ">
+            A short "ooh" sound. Sort of abrupt.
+        </LetterTable>
+        <LetterTable letter="ऊ">A longer "ooh" sound.</LetterTable>
+        <LetterTable letter="ए">
+            An "eh" sound. Sort of abrupt.
+        </LetterTable>
+        <LetterTable letter="ऐ">An "air" sort of sound.</LetterTable>
+        <LetterTable letter="ओ">
+            An "o" sound. Like in "opportunity.
+        </LetterTable>
+        <LetterTable letter="औ">An "or" sound.</LetterTable>
+        <LetterTable letter="औ">
+            Sorry I don&rsquo;t know this one yet.
+        </LetterTable>
+        <LetterTable letter="ऑ">
+            Don&rsquo;t know this one either at present.
+        </LetterTable>
+    </LetterTableContainer>
+    <h2>The Missing Vowel</h2>
+    <p>
+        For all that Devanagari has letters for everything, there is (at least)
+        one IPA vowel that Devanagari does not have a way to write. That is the
+        <span lang="und-Latn-fonipa">Ə</span>, which is the "weak vowel" in
+        English. I&rsquo;m well out of my depth here, but it&rsquo;s that short
+        "uh" sound that comes out if you talk in a hurry and stop trying to
+        differentiate consonant sounds.
+    </p>
+    <p>
+        When in the Devanagari script, the <span lang="und-Latn-fonipa">Ə</span>
+        sound is actually implied unless you deliberately write that it should
+        not be included. Specifically, after every consonant is an implied
+        <span lang="und-Latn-fonipa">Ə</span> by default. To join a consonant to
+        the letter after it directly, without this implicit sound between them,
+        Devanagari uses a ligature-like construction to connect a consonant to
+        the letter after it.
+    </p>
+    <p>
+        Even though this is technically we can treat this implicit
+        <span lang="und-Latn-fonipa">Ə</span> behaviour as a single rule, it
+        makes more sense when you break it up into two different cases and
+        explain those.
+    </p>
+    <dl>
+        <dt>Consonant next to consonant</dt>
+        <dd>
+            By default, if you write two consonants next to each other they have
+            an implied <span lang="und-Latn-fonipa">Ə</span> between them. Think
+            <span lang="hi">सक</span>. To properly join the consonants, the
+            first is written differently, in a way that attaches it more
+            closely to the second. This is called a "half letter" and looks
+            like this: <span lang="hi">स्क</span>.
+        </dd>
+        <dt>Consonant next to vowel</dt>
+        <dd>
+            In almost all (maybe even actually all) cases, you cannot write a
+            consonant next to a vowel with the implicit
+            <span lang="und-Latn-fonipa">Ə</span> between them. The joined
+            letters are the default way of writing a consonant next to a vowel,
+            and actually the only way vowels get written out fully like in the
+            above lists is when they are following other vowels, or at the
+            start of a word.
+        </dd>
+    </dl>
+    <h2>Joined letter combinations</h2>
+    <p>
+        Yeah so I&rsquo;m not writing these out by hand. This section will have
+        to wait until I can be bothered writing code to populate it.
+    </p>
+</SinglePage>
