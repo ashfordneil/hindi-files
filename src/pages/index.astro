@@ -1,12 +1,22 @@
 ---
 import SinglePage from '../layouts/SinglePage.astro';
+import Callout from '../components/Callout.astro';
 ---
 <SinglePage>
     <h1>Hi there</h1>
     <p>
         Welcome to Neil&rsquo;s Hindi Files! This is a project I am working on
-        as a way to document and consolidate my Hindi vocab.
+        as a way to document and consolidate my learning of Hindi, as a native
+        English speaker.
     </p>
+    <Callout title="A little note">
+        Just a heads up that these are my own study notes, and they&rsquo;re not
+        intended to be used as a learning resource by others. You are of course
+        welcome to read them, that is why they&rsquo;re online, just take
+        things with a grain of salt when it comes to factual accuracy: I am
+        writing about this language as I understand it, and I do not really
+        understand it all too well.
+    </Callout>
 
     <h2>The Very Basics</h2>
     <p>
@@ -17,7 +27,8 @@ import SinglePage from '../layouts/SinglePage.astro';
     </p>
     <ul>
         <li>
-            <a href="/basics/writing">The writing system</a>: mostly just a reference.
+            <a href="/basics/writing">The writing system</a>: a list of letters,
+            and a bit of discussion around how and why they get joined.
         </li>
     </ul>
 </SinglePage>
