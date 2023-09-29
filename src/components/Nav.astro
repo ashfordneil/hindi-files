@@ -19,6 +19,20 @@ import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg';
         margin: 0;
     }
 
+    span::before {
+        content: "—";
+        padding: 0 0.5ch;
+    }
+
+    @media (max-width: 80ch) {
+        span {
+            display: block;
+        }
+        span::before {
+            display: none;
+        }
+    }
+
     img {
         width: 1rem;
         vertical-align: middle;
@@ -30,8 +44,7 @@ import githubLogo from '@fortawesome/fontawesome-free/svgs/brands/github.svg';
         ?
             <h2>
                 <a href="/">Neil&rsquo;s Hindi Files</a>
-                &mdash;
-                {title}
+                <span>{title}</span>
             </h2>
         :
             <h2>

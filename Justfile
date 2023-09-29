@@ -1,3 +1,3 @@
 
 dev:
-  yarn run astro dev
+  yarn run astro dev --host
