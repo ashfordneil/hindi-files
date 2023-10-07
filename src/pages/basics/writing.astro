@@ -159,61 +159,72 @@ import LetterTableContainer from '../../components/LetterTableContainer.astro';
             An "o" sound. Like in "opportunity.
         </LetterTable>
         <LetterTable letter="औ">An "or" sound.</LetterTable>
-        <LetterTable letter="औ">
-            Sorry I don&rsquo;t know this one yet.
-        </LetterTable>
         <LetterTable letter="ऑ">
-            Don&rsquo;t know this one either at present.
+            Don&rsquo;t know this one at present.
         </LetterTable>
     </LetterTableContainer>
-    <h2>The Missing Vowel</h2>
+    <h2>Implicit Vowels</h2>
     <p>
-        For all that Devanagari has letters for everything, there is (at least)
-        one IPA vowel that Devanagari does not have a way to write. That is the
-        <span lang="und-Latn-fonipa">Ə</span>, which is the "weak vowel" in
-        English. I&rsquo;m well out of my depth here, but it&rsquo;s that short
-        "uh" sound that comes out if you talk in a hurry and stop trying to
-        differentiate consonant sounds.
+	So after writing up the entire table of vowels, we come to the
+	confusing realisation that they are almost never actually written out
+	like this in Hindi. Instead, the preceeding consonant is adjusted to
+	include the vowel in how it&rsquo;s written. Here are the vowels written out
+	after a <span lang="hi">क</span>.
     </p>
+    <LetterTableContainer>
+	<LetterTable blank />
+	<LetterTable letter="का">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">आ</span>.
+	</LetterTable>
+	<LetterTable letter="कि">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">इ</span>.
+	</LetterTable>
+	<LetterTable letter="की">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">ई</span>.
+	</LetterTable>
+	<LetterTable letter="कु">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">उ</span>.
+	</LetterTable>
+	<LetterTable letter="कू">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">ऊ</span>.
+	</LetterTable>
+	<LetterTable letter="के">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">ए</span>.
+	</LetterTable>
+	<LetterTable letter="कै">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">ऐ</span>.
+	</LetterTable>
+	<LetterTable letter="को">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">ओ</span>.
+	</LetterTable>
+	<LetterTable letter="कौ">
+	    This is a <span lang="hi">क</span> followed by a
+	    <span lang="hi">औ</span>.
+	</LetterTable>
+    </LetterTableContainer>
     <p>
-        When in the Devanagari script, the <span lang="und-Latn-fonipa">Ə</span>
-        sound is actually implied unless you deliberately write that it should
-        not be included. Specifically, after every consonant is an implied
-        <span lang="und-Latn-fonipa">Ə</span> by default. To join a consonant to
-        the letter after it directly, without this implicit sound between them,
-        Devanagari uses a ligature-like construction to connect a consonant to
-        the letter after it.
+	You may have noticed two vowels missing from the first table. Firstly,
+	I am missing <span lang="hi">ऑ</span> because I could not find it on my
+	keyboard. But more importantly, I did not show how to write a
+	<span lang="hi">क</span> next to a <span lang="hi">अ</span>. That is
+	because actually the way to combine these two sounds together is by
+	writing <span lang="hi">क</span>. There is an implicit
+	<span lang="hi">अ</span> sound after every consonant that you write,
+	unless you specifically join the consonant to another consonant sound
+	after it. For example like <span lang="hi">स्क</span> (this is a
+        <span lang="hi">स</span> followed by a <span lang="hi">क</span>).
     </p>
-    <p>
-        Even though this is technically we can treat this implicit
-        <span lang="und-Latn-fonipa">Ə</span> behaviour as a single rule, it
-        makes more sense when you break it up into two different cases and
-        explain those.
-    </p>
-    <dl>
-        <dt>Consonant next to consonant</dt>
-        <dd>
-            By default, if you write two consonants next to each other they have
-            an implied <span lang="und-Latn-fonipa">Ə</span> between them. Think
-            <span lang="hi">सक</span>. To properly join the consonants, the
-            first is written differently, in a way that attaches it more
-            closely to the second. This is called a "half letter" and looks
-            like this: <span lang="hi">स्क</span>.
-        </dd>
-        <dt>Consonant next to vowel</dt>
-        <dd>
-            In almost all (maybe even actually all) cases, you cannot write a
-            consonant next to a vowel with the implicit
-            <span lang="und-Latn-fonipa">Ə</span> between them. The joined
-            letters are the default way of writing a consonant next to a vowel,
-            and actually the only way vowels get written out fully like in the
-            above lists is when they are following other vowels, or at the
-            start of a word.
-        </dd>
-    </dl>
     <h2>Joined letter combinations</h2>
     <p>
-        Yeah so I&rsquo;m not writing these out by hand. This section will have
+        Yeah so I&rsquo;m not typing these out by hand. This section will have
         to wait until I can be bothered writing code to populate it.
     </p>
 </SinglePage>
